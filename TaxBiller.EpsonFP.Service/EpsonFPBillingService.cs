@@ -154,7 +154,7 @@ namespace TaxBiller.EpsonFP.Service
                 );
             }
 
-            return this.CloseTicket("");//(invoice.TaxCategory);
+            return this.CloseTicket(invoice.TaxCategory);
         }
     }
 }
