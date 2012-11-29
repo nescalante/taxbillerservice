@@ -245,32 +245,6 @@ namespace TaxBiller.WinForm
             }
         }
 
-
-        #region private function
-
-        private void ShowMsg(PrinterInfo info)
-        {
-            string codigo = "0000" + info.ReturnCode.ToString("X");
-            string estadoImpresora = "0000" + info.PrinterStatus.ToString("X");
-            string estadofiscal = "0000" + info.FiscalStatus.ToString("X");
-            
-            string s = "Código de Retorno: " + codigo.Substring(codigo.Length-4);
-            s += System.Environment.NewLine + "Estado Impresora: " + estadoImpresora.Substring(estadoImpresora.Length-4); 
-            s += System.Environment.NewLine + "Estado Fsical: " + estadofiscal.Substring(estadofiscal.Length-4); 
-
-            MessageBox.Show(s, "Imformacion Impresora");
-
-            string mydocpath = Path.GetDirectoryName(Application.ExecutablePath);
-            StringBuilder sb = new StringBuilder();
-
-            sb.AppendLine(DateTime.Now.ToString() + "," + s);
-
-            using (StreamWriter outfile = new StreamWriter(mydocpath + @"\errores.txt", true))
-            {
-                outfile.Write(sb.ToString());
-            }
-        }
-
         private void ImprimirTicketFactura()
         {
             var invoice = new Invoice
@@ -463,8 +437,6 @@ namespace TaxBiller.WinForm
 
             return true;
         }
-
-        #endregion
 
         private void txtDescuento_TextChanged(object sender, EventArgs e)
         {
