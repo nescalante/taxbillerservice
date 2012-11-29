@@ -31,12 +31,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AxInterop.EpsonFPHostControlX">
-      <HintPath>..\packages\AxInterop.EpsonFPHostControlX.dll</HintPath>
+    <Reference Include="AxInterop.EpsonFPHostControlX, Version=1.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AxInterop.EpsonFPHostControlX.dll</HintPath>
     </Reference>
-    <Reference Include="Interop.EpsonFPHostControlX">
-      <HintPath>..\packages\Interop.EpsonFPHostControlX.dll</HintPath>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
+    <Reference Include="Interop.EpsonFPHostControlX, Version=1.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\Interop.EpsonFPHostControlX.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

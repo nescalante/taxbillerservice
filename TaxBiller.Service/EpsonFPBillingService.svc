@@ -1,1 +1,0 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="TaxBiller.EpsonFP.Service.EpsonFPBillingService" CodeBehind="TaxBiller.EpsonFP.Service.EpsonFPBillingService.cs" %>

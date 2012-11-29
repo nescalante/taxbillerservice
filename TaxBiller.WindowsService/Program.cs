@@ -16,7 +16,7 @@ namespace TaxBiller.WindowsService
         /// </summary>
         static void Main()
         {
-            var sn = "Facturador Fiscal Winks Hotel";
+            var sn = "Facturador Fiscal";
 
             try
             {
