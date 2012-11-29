@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Facturar";
+}
+
+<h2>Facturar</h2>
+
+@using (Html.BeginForm("Facturar", "Billing", FormMethod.Post))
+{
+    <button type="submit">¡test!</button>
+}
+
+<br />
+
+<a id="js" href="#">js</a>
+
+<script>
+    $(function () {
+        $("#js").click(function () {
+            $.post("@Url.Action("DailyCashBalance")");
+        });
+    });
+</script>
