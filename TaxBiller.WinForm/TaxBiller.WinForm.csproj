@@ -72,12 +72,6 @@
     <Compile Include="frmFacturar.Designer.cs">
       <DependentUpon>frmFacturar.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmLogin.Designer.cs">
-      <DependentUpon>frmLogin.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,10 +84,6 @@
     <EmbeddedResource Include="frmFacturar.resx">
       <SubType>Designer</SubType>
       <DependentUpon>frmFacturar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.resx">
-      <SubType>Designer</SubType>
-      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <SubType>Designer</SubType>
