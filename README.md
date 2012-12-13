@@ -12,7 +12,7 @@ Printer services must be implemented as logic services in different assemblies.
 
 Here is an example to a call for the service from a web using taxbiller.js script:
 
-`var sampleInvoice = { "Name": "nom", "Address": "dir", Items: [ { Quantity: 3, Description: "des", Price: 1.5 } ] };`
-`b.bill(sampleInvoice, function(data) { alert("Status: " + data.Status + "\nMessage: " + data.Message); });`
+    var sampleInvoice = { "Name": "nom", "Address": "dir", Items: [ { Quantity: 3, Description: "des", Price: 1.5 } ] };
+    b.bill(sampleInvoice, function(data) { alert("Status: " + data.Status + "\nMessage: " + data.Message); });
 
 See wiki for details.
