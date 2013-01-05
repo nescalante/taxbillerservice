@@ -22,7 +22,7 @@ namespace TaxBiller.WinForm
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMain(billingLogic));
+            Application.Run(new Main(billingLogic));
         }
     }
 }
